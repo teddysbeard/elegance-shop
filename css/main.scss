@@ -29,12 +29,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     &__row {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
         position: relative;
         padding: 40px 0;
     }
     &__logo {
+        margin-right: 83px;
         :hover  {
             text-decoration: underline;
             // color: #F72464;
@@ -64,6 +65,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     &__cart {
         width: 34px;
         height: 34px;
+        margin-left: auto;
         img {
             display: block;
             max-width: 100%;
