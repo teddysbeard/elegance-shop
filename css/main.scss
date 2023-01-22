@@ -18,13 +18,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 // Стилизация header`а
 
-.header {
+.navigation {
     font-family: 'Noto Sans', sans-serif;
     font-size: 28px;
     &__row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         position: relative;
         padding: 40px 0;
     }
@@ -55,23 +56,36 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     &__item {
         font-size: 18px;
     }
+    &__cart {
+        width: 34px;
+        height: 34px;
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+    &__cart-link {
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+    &__cart-counter {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -5px;
+        right: -2px;
+        background: #F72464;
+        border-radius: 50%;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
 }
 .container {
     width: 1170px;
     margin: 0 auto;
-}
-.header__row {
-   
-}
-.header__logo {
-}
-.header__nav {
-}
-.header__list {
-}
-.header__item {
-}
-.header__link {
-}
-.header__cart {
 }
