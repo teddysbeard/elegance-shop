@@ -16,7 +16,12 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
-// Стилизация header`а
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+// navigation
 
 .navigation {
     font-family: 'Noto Sans', sans-serif;
@@ -85,7 +90,58 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
     }
 }
-.container {
-    width: 1170px;
-    margin: 0 auto;
+
+.header {
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__content {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 670px;
+        height: 300px;
+        background-color: #F7246355;
+    }
+    &__image {
+        width: 670px;
+        height: 737px;
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+    &__title {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 72px;
+        line-height: 96px;
+    }
+    &__description {
+        width: 599px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: left;
+        margin-bottom: 65px;
+    }
+    &__button {
+        width: 181px;
+        border-radius: 4px;
+        padding: 14px 32px 14px;
+        background-color: #F72464;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        line-height: 1;
+        a {
+            color: #FFFFFF;
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 26px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
 }
