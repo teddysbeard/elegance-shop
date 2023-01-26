@@ -156,11 +156,7 @@ a.button:hover {
     box-shadow: 0px 4px 25px rgba(184, 13, 64, 0.671);
     background: #ff3874;
 }
-/*New Products*/
 
-.section-new {
-    padding: 60px 0px 70px 0px;
-}
 .section-header {
     &__title {
         font-family: 'Playfair Display', sans-serif;
@@ -182,11 +178,27 @@ a.button:hover {
         text-align: center;
     }
 }
+
+/*New Products*/
+.section-new {
+    padding: 60px 0px 70px 0px;
+}
+.wrapper-new {
+    grid-template: repeat(2,420px) / repeat(4, 270px);
+}
+/*Featured products*/ 
+.section-featured {
+    padding: 70px 0px 70px 0px;
+}
+.wrapper-featured {
+    grid-template: repeat(1,420px) / repeat(4, 270px);
+}
+
+
 .section-products-wrapper {
     margin-top: 40px;
     display: grid;
     grid-gap: 40px 30px;
-    grid-template: repeat(2,420px) / repeat(4, 270px);
 }
 .product {
     display: flex;
