@@ -154,7 +154,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   justify-content: end;
   position: relative;
-  margin-bottom: 30px;
 }
 .header__content {
   position: absolute;
@@ -207,27 +206,32 @@ a.button:hover {
   background: #ff3874;
 }
 
-.featured__header-title {
+/*New Products*/
+.section-new {
+  padding: 60px 0px 70px 0px;
+}
+
+.section-header__title {
   font-family: "Playfair Display", sans-serif;
   font-size: 42px;
   line-height: 56px;
   text-align: center;
 }
-.featured__header-title h2 {
+.section-header__title h2 {
   color: #000000;
 }
-.featured__header-description {
+.section-header__description {
+  margin-top: 10px;
+  color: #999999;
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   text-transform: uppercase;
-  margin-top: 10px;
   text-align: center;
-  color: #999999;
 }
 
-.featured-products-wrapper {
+.section-products-wrapper {
   margin-top: 40px;
   display: grid;
   grid-gap: 40px 30px;
@@ -271,4 +275,62 @@ a.button:hover {
 .product__price-cur {
   color: #F72464;
   font-weight: 700;
+}
+
+/* browse-button*/
+.section-button-wrapper {
+  text-align: center;
+}
+
+.browse-button {
+  display: inline-block;
+  margin-top: 40px;
+  border: 1px solid #F72464;
+  width: 229px;
+  border-radius: 4px;
+  height: 42px;
+  text-align: center;
+}
+.browse-button span {
+  display: block;
+  color: #777777;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 11px 0px;
+  text-transform: uppercase;
+}
+
+.info-section {
+  padding: 68px 0;
+  position: relative;
+  background: url(./../images/info-blocks/background-1.png);
+  background-size: cover;
+  background-position: center;
+}
+.info-section__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 52px;
+  text-align: left;
+}
+.info-section__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.info-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
