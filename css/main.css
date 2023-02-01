@@ -494,3 +494,52 @@ a.button:hover {
 .subscribe-form > * + * {
   margin-left: 10px;
 }
+
+.footer {
+  background-color: #000000;
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__nav {
+  margin-bottom: 25px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer__nav-link {
+  color: #FFF;
+  transition: color 0.2s ease-in;
+  transition: font-size 0.2s ease-in;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav > * + * {
+  margin-left: 10px;
+}
+
+.footer__nav-link:hover {
+  font-size: 20px;
+  color: #F72464;
+}
+
+.footer__socials-link + .footer__socials-link {
+  margin-left: 30px;
+}
+
+.footer__socials-icon path {
+  transition: fill 0.2s ease-in;
+}
+
+.footer__socials-icon:hover path {
+  fill: #F72464;
+}
