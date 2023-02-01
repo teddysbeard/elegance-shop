@@ -216,6 +216,8 @@ a.button:hover {
   color: #000000;
 }
 .section-header__description {
+  margin: 0 auto;
+  max-width: 630px;
   margin-top: 10px;
   color: #999999;
   font-family: "Noto Sans", sans-serif;
@@ -356,6 +358,8 @@ a.button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 85px;
+  margin-bottom: 90px;
   row-gap: 40px;
 }
 
@@ -411,5 +415,82 @@ a.button:hover {
 }
 
 .post__button:hover::after {
+  margin-left: 10px;
+}
+
+.section-subscribe {
+  padding: 70px 0px 100px 0px;
+}
+
+.subscribe__title {
+  margin: 20px auto 0 auto;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 42px;
+  line-height: 56px;
+  text-align: center;
+}
+.subscribe__title h2 {
+  color: #000000;
+}
+.subscribe__description {
+  margin: 0 auto;
+  max-width: 630px;
+  margin-top: 10px;
+  color: #999999;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+.subscribe-form__input {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 230px;
+  height: 42px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #F72464;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #000000;
+}
+.subscribe-form__input ::-moz-placeholder {
+  color: #777777;
+}
+.subscribe-form__input :-ms-input-placeholder {
+  color: #777777;
+}
+.subscribe-form__input ::placeholder {
+  color: #777777;
+}
+.subscribe-form__button {
+  width: 134px;
+  height: 42px;
+  background: #F72464;
+  border-radius: 4px;
+  line-height: 42px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  transition: box-shadow 0.2s ease-in;
+}
+.subscribe-form__button:hover {
+  box-shadow: 0px 2px 15px rgba(184, 13, 64, 0.671);
+  background: #ff3874;
+}
+
+.subscribe-form > * + * {
   margin-left: 10px;
 }
