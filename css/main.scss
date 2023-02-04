@@ -196,6 +196,7 @@ a.button:hover {
     grid-template: repeat(1,420px) / repeat(4, 270px);
 }
 
+
 .section-products-wrapper {
     margin-top: 40px;
     display: grid;
@@ -480,11 +481,9 @@ a.button:hover {
 .footer__socials-link + .footer__socials-link {
     margin-left: 30px;
 }
-.footer__socials-icon {
+.footer__socials-icon path {
     transition: fill 0.2s ease-in;
-    fill: #FFF;
 }
-.footer__socials-icon:hover {
+.footer__socials-icon:hover path{
     fill: #F72464;
 }
-
