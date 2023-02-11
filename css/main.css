@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.body {
+  font-family: "Noto Sans", sans-serif;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -771,15 +775,23 @@ a.button:hover {
   align-items: center;
 }
 .footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-bottom: 25px;
-  font-family: "Noto Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+  color: #FFF;
+}
+@media (min-width: 992px) {
+  .footer__nav {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .footer__nav-link {
-  color: #FFF;
+  color: inherit;
   transition: color 0.2s ease-in;
   transition: font-size 0.2s ease-in;
 }
@@ -789,7 +801,13 @@ a.button:hover {
 }
 
 .footer__nav > * + * {
-  margin-left: 10px;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .footer__nav > * + * {
+    margin-left: 10px;
+    margin-top: 0;
+  }
 }
 
 .footer__nav-link:hover {
@@ -802,20 +820,9 @@ a.button:hover {
 }
 
 .footer__socials-icon {
-  transition: fill 0.2s ease-in;
   fill: #FFF;
 }
 
 .footer__socials-icon:hover {
   fill: #F72464;
-}
-
-.header,
-nav,
-.info-section,
-.section-new,
-.section-featured,
-.section-blog,
-footer {
-  display: none;
 }
