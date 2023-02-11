@@ -519,27 +519,46 @@ a.button:hover {
 }
 
 .info-section {
-  padding: 68px 0;
+  padding: 32px 0;
   position: relative;
   background: url(./../images/info-blocks/background-1.png);
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 992px) {
+  .info-section {
+    text-align: left;
+    padding: 68px 0;
+  }
+}
 .info-section__title {
   font-family: "Playfair Display", sans-serif;
-  font-size: 52px;
+  font-size: 32px;
   font-weight: 400;
   color: #FFFFFF;
-  line-height: 52px;
-  text-align: left;
+  line-height: 1.63;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  .info-section__title {
+    font-size: 52px;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .info-section__row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 992px) {
+  .info-section__row {
+    flex-direction: row;
+  }
 }
 
 .info-section::before {
@@ -747,7 +766,7 @@ a.button:hover {
 
 .header,
 nav,
-.info-section,
+.section-new,
 .section-featured,
 .section-blog,
 .section-subscribe,
