@@ -693,14 +693,19 @@ a.button:hover {
 
 .subscribe-form {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
   margin-top: 30px;
+}
+@media (min-width: 540px) {
+  .subscribe-form {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .subscribe-form__input {
   padding-left: 10px;
   padding-right: 10px;
-  width: 230px;
   height: 42px;
   border-radius: 4px;
   background: #FFFFFF;
@@ -718,8 +723,12 @@ a.button:hover {
 .subscribe-form__input ::placeholder {
   color: #777777;
 }
+@media (min-width: 540px) {
+  .subscribe-form__input {
+    width: 230px;
+  }
+}
 .subscribe-form__button {
-  width: 134px;
   height: 42px;
   background: #F72464;
   border-radius: 4px;
@@ -735,9 +744,20 @@ a.button:hover {
   box-shadow: 0px 2px 15px rgba(184, 13, 64, 0.671);
   background: #ff3874;
 }
+@media (min-width: 540px) {
+  .subscribe-form__button {
+    width: 230px;
+  }
+}
 
 .subscribe-form > * + * {
-  margin-left: 10px;
+  margin-top: 10px;
+}
+@media (min-width: 540px) {
+  .subscribe-form > * + * {
+    margin-left: 10px;
+    margin-top: 0;
+  }
 }
 
 .footer {
@@ -795,7 +815,7 @@ nav,
 .info-section,
 .section-new,
 .section-featured,
-.section-subscribe,
+.section-blog,
 footer {
   display: none;
 }
