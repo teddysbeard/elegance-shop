@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 992px) {
   .navigation__menu {
+    display: block;
     opacity: 1;
     position: static;
     background-color: transparent;
@@ -150,12 +151,6 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__list li :hover {
   color: #F72464;
 }
-.navigation__list li:first-child {
-  margin-left: 0px;
-}
-.navigation__list li:last-child {
-  margin-right: 0px;
-}
 @media (min-width: 992px) {
   .navigation__list {
     display: flex;
@@ -165,6 +160,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     color: #000;
     transform: none;
+  }
+  .navigation__list li:first-child {
+    margin-left: 0px;
+  }
+  .navigation__list li:last-child {
+    margin-right: 0px;
   }
 }
 .navigation__link {
@@ -387,14 +388,29 @@ a.button:hover {
   background: #ff3874;
 }
 
+.section-header {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .section-header {
+    margin-bottom: 40px;
+  }
+}
 .section-header__title {
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Playfair Display", sans-serif;
-  font-size: 42px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 1.3;
   text-align: center;
 }
 .section-header__title h2 {
   color: #000000;
+}
+@media (min-width: 992px) {
+  .section-header__title {
+    font-size: 42px;
+  }
 }
 .section-header__description {
   margin: 0 auto;
@@ -411,28 +427,34 @@ a.button:hover {
 
 /*New Products*/
 .section-new {
-  padding: 60px 0px 70px 0px;
+  padding: 30px 0px 35px 0px;
 }
-
-.wrapper-new {
-  grid-template: repeat(2, 420px)/repeat(4, 270px);
+@media (min-width: 992px) {
+  .section-new {
+    padding: 60px 0px 70px 0px;
+  }
 }
 
 /*Featured products*/
 .section-featured {
-  padding: 70px 0px 70px 0px;
+  padding: 35px 0px 35px 0px;
 }
-
-.wrapper-featured {
-  grid-template: repeat(1, 420px)/repeat(4, 270px);
+@media (min-width: 992px) {
+  .section-featured {
+    padding: 70px 0px 70px 0px;
+  }
 }
 
 .section-products-wrapper {
   margin-top: 40px;
-  display: grid;
-  grid-gap: 40px 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 40px;
 }
-
 .product {
   display: flex;
   flex-direction: column;
@@ -723,8 +745,9 @@ a.button:hover {
   fill: #F72464;
 }
 
+.header,
+nav,
 .info-section,
-.section-new,
 .section-featured,
 .section-blog,
 .section-subscribe,
