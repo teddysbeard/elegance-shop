@@ -524,24 +524,38 @@ a.button:hover {
 .posts-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 85px;
-    margin-bottom: 90px;
+    justify-content: center;
+    margin-top: 40px; // под вопросом!
+    margin-bottom: 45px;
     row-gap: 40px;
+    column-gap: 30px;
+    @media (min-width: 992px) {
+        justify-content: center;
+        margin-top: 85px;
+        margin-bottom: 90px;
+    }
 }
 .post {
     max-width: 570px;
     display: flex;
     justify-content: space-between;
+    column-gap: 15px;
     flex-grow: 1;
+    align-items: flex-start;
+    @media (min-width: 400px) {
+        column-gap: 30px;
+    }
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 370px;
-    }
+        }
     &__image {
-
+        max-width: 100px;
+        @media (min-width: 540px) {
+            max-width: 170px;
+        }
     }
     &__title {
         margin-bottom: 10px;
@@ -568,6 +582,7 @@ a.button:hover {
         font-size: 16px;
     }
 }
+
 .post__button::after {
     content: "";
     display: inline-block;
@@ -708,10 +723,10 @@ a.button:hover {
 }
 .header,
 nav,  
-// .info-section, 
+.info-section, 
 .section-new, 
 .section-featured, 
-.section-blog, 
+// .section-blog, 
 .section-subscribe, 
 footer {
     display: none;
